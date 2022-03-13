@@ -1,0 +1,24 @@
+.layoutMargin{
+    margin:2%2%;
+    
+}
+
+.dashboardcontainer{
+    background-image: url('../../assets/background.jpg');
+    height:75vh;
+    width: 100vw;
+    color: #fff;
+}
+.lower-container{
+    padding:10% 5%
+}
+
+.homeButton{
+    display: inline-block;
+    margin: 5px;
+}
+
+.homeButton:hover{
+    background-color: rgb(5, 93, 165);
+    color:#fff
+}

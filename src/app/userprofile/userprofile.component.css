@@ -1,0 +1,35 @@
+.username{
+    font-weight: bold;
+    display: block;
+    font-size: 2em;
+}
+
+.imgAvatar{
+    height:80%;
+     width:100%;
+     border-radius: 50%;
+}
+
+
+.linkText{
+    color: rgb(37, 68, 247);
+    cursor: pointer;
+}
+
+
+.linkText:hover{
+    color:#4a7af3;
+    font-weight: bold;
+}
+
+.projectText{
+    color: rgb(4, 18, 97);
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.projectText:hover{
+    color:#4a7af3;
+    font-weight: bold;
+}
+

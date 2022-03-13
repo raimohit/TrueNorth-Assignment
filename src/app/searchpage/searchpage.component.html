@@ -1,0 +1,28 @@
+<div class="container">
+    <div class="search">
+        <div class="row">
+            <div class="col-md-8"></div>
+            <div class="col-md-4">
+                <div>
+                    <div class="search-2"> <i class='bx bxs-map'></i>
+                         <input list="users" type="text" placeholder="Search users..." [(ngModel)]="searchedUser"> 
+                         <datalist id="users"> 
+                            <option style="width: 100%" *ngFor="let u of userlist" value="{{u}}">{{u}}</option>
+                         </datalist>
+                         <button (click)="getUser()">Search</button> </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+    <div class="" style="margin:15%25%" *ngIf="!showUserProfile">
+        <i class="bi bi-people-fill"></i>
+        <span class="defaultView">User profile will be loaded here. <br>Please search users in the search bar <br>at top-right corner</span>
+    </div>
+
+    <div class="userprofile" *ngIf="showUserProfile">
+        <div class="card" style="border: 1px solid rgb(128, 127, 127);">
+            <app-userprofile></app-userprofile>
+        </div>
+    </div>
+</div>

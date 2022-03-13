@@ -1,0 +1,22 @@
+.linkText{
+    color: rgb(15, 49, 240);
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.linkText:hover{
+    color:#6a94fc;
+    
+}
+
+.defaultView{
+    font-size: 1.5em;
+    font-family:ui-serif;
+    font-weight: bold;
+}
+
+.historyContainer{
+    border-right:1px solid #000;
+    padding-left: 2%;
+}

@@ -1,0 +1,46 @@
+<div style="height:100%;width:100%" >
+    <div class="row" style="padding: 2%2%;" >
+        <div class="col-md-4">
+            <img src="{{currentUserInfo.avatar_url}}" class="imgAvatar">
+        </div>
+
+        <div class="col-md-8" style="padding:5% 5%">
+            <div>
+                <span class="username">{{currentUserInfo.name}}</span>
+                <span class="loginname d-block">{{currentUserInfo.login}}</span>
+                <span class="bio d-block">{{currentUserInfo.bio}}</span>
+                <span class="followers d-block">
+                    <i class="fa fa-user" style="color: rgb(4, 66, 117);" aria-hidden="true"></i>&nbsp;&nbsp;<b>{{currentUserInfo.followers | NA}}</b> followers <b>{{currentUserInfo.following}}</b> following
+                </span>
+                <span class="company d-block">
+                    <i class="fa fa-building" style="color: brown;" aria-hidden="true"></i>&nbsp;&nbsp;{{currentUserInfo.company | NA}}
+                </span>
+                <span class="location d-block">
+                    <i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp;&nbsp;{{currentUserInfo.location | NA}}
+                </span>
+                <span class="link d-block">
+                    <i class="fa fa-link" aria-hidden="true" style="color:rgb(135, 145, 5)"></i>&nbsp;&nbsp;
+                    <a class="linkText">{{currentUserInfo.blog | NA}}</a>
+                </span>
+                <span class="email d-block">
+                    <i class="fa fa-envelope-open" style="color: rgb(206, 57, 11);" aria-hidden="true"></i>&nbsp;&nbsp;
+                    <a class="linkText">{{currentUserInfo.email | NA}}</a>
+                </span>
+                <span class="email d-block">
+                    <i class="fa fa-twitter" style="color:rgb(25, 120, 197)" aria-hidden="true"></i>&nbsp;&nbsp;
+                    <span class="linkText" style="font-weight: bold;">@{{currentUserInfo.twitter_username | NA}}</span>
+                </span>
+
+            </div>
+            <br>
+            <div class="card" style="border:1px solid rgb(129, 127, 127)">
+                <div class="projectinfo">
+                    <span class="d-block"><b>Repos:</b>&nbsp;&nbsp; <span class="projectText">{{currentUserInfo.public_repos}}</span></span>
+                    <span class="d-block"><b>Gists:</b>&nbsp;&nbsp;<span class="projectText">{{currentUserInfo.public_gists}}</span></span>
+                    <span class="d-block"><b>Last Updated:</b>&nbsp;&nbsp;<span class="projectText">{{currentUserInfo.updated_at}}</span></span>
+                    <span class="d-block"><b>Last created:</b>&nbsp;&nbsp;<span class="projectText">{{currentUserInfo.created_at}}</span></span>
+                </div>
+            </div>
+        </div>
+    </div>   
+</div>

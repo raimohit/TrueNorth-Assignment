@@ -1,0 +1,26 @@
+<div class="row" style="height: 90vh">
+ 
+    <div class="col-md-2 historyContainer" >
+        <div class="" style="margin-top:10%">
+            <b>User Search History </b>
+            <span title="clear history" class="fa fa-ban" style="color: red;" (click)="clearHistory()" aria-hidden="true"></span>
+        </div>
+        <div style="margin-top: 5%;">
+            <span style="display: block;" *ngFor="let s of searchHistory">
+                <span class="linkText" (click)="loadUser(s)"> {{s}} </span>
+            </span>
+        </div>
+        
+    </div>
+
+    <div class="col-md-10">
+        <div class="" style="margin:15%25%" *ngIf="!showUserProfile">
+            <i class="bi bi-people-fill"></i>
+            <span class="defaultView">User profile will be loaded here. <br>Please search users in the search bar <br>at top-right corner</span>
+        </div>
+        <div *ngIf="showUserProfile">
+            <app-userprofile></app-userprofile>
+        </div>
+    </div>
+    
+</div>
