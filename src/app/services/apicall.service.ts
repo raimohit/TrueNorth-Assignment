@@ -23,7 +23,7 @@ export class ApicallService {
   }
 
   getUserProfile(data:any){
-    return this.http.get("http://api.github.com/users/"+data)
+    return this.http.get("https://api.github.com/users/"+data)
   }
 
 
