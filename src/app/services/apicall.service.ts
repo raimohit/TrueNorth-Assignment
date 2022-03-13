@@ -15,7 +15,7 @@ export class ApicallService {
   constructor(private http:HttpClient) {}
 
   getUserData(){
-    return this.http.get('../assets/userinfo.json')
+    return this.http.get('/assets/userinfo.json')
   }
 
   getUsers(){
