@@ -1,5 +1,5 @@
 <div style="height:100%;width:100%" >
-    <div class="row" style="padding: 2%2%;" >
+    <div class="row" style="padding: 2%2%;" *ngIf="showUserProfile" >
         <div class="col-md-4">
             <img src="{{currentUserInfo.avatar_url}}" class="imgAvatar">
         </div>
@@ -42,5 +42,7 @@
                 </div>
             </div>
         </div>
-    </div>   
+    </div>
+
+    
 </div>

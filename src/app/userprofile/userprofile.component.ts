@@ -42,7 +42,9 @@ export class UserprofileComponent implements OnInit {
       this.currentUserInfo=res
       this.showUserProfile=true
       this.api.messageSource.next('')
-    })
+
+    }
+    )
   }
 
 }

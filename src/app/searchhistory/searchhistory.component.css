@@ -19,4 +19,16 @@
 .historyContainer{
     border-right:1px solid #000;
     padding-left: 2%;
+    height: 90vh;
+    overflow: scroll;
 }
+
+::-webkit-scrollbar {
+    width: 20px; 
+    height: 20px; 
+  }
+  
+  /* for Firefox add this class as well */
+  .thin_scroll{
+    scrollbar-width: thin;
+  }

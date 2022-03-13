@@ -17,15 +17,18 @@ export class SearchpageComponent implements OnInit {
 
   ngOnInit(): void {
 
-    this.userlist=[]
-    this.api.getUsers().subscribe((res:any)=>{
-      //console.log('userinfo',res)
-      res.forEach((user:any)=>{
-       // console.log(user)
-        this.userlist.push(user.login)
-      })
-      console.log(this.userlist)
-    })
+    this.userlist=["mojombo","pjhyett","wycats","vanpelt","kevinclark"]
+    
+    /*get top 30 most active users on github*/
+
+    // this.api.getUsers().subscribe((res:any)=>{
+    //   //console.log('userinfo',res)
+    //   res.forEach((user:any)=>{
+    //    // console.log(user)
+    //     this.userlist.push(user.login)
+    //   })
+    //   console.log(this.userlist)
+    // })
     
   }
 

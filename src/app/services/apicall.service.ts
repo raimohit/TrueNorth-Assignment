@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import {HttpClient} from '@angular/common/http'
-import { BehaviorSubject } from 'rxjs';
+import { BehaviorSubject, catchError, Observable, throwError } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -15,7 +15,7 @@ export class ApicallService {
   constructor(private http:HttpClient) {}
 
   getUserData(){
-    return this.http.get('../assets/userinfo.json');
+    return this.http.get('../assets/userinfo.json')
   }
 
   getUsers(){
@@ -25,6 +25,9 @@ export class ApicallService {
   getUserProfile(data:any){
     return this.http.get("http://api.github.com/users/"+data)
   }
+
+
+ 
 
 
 }
